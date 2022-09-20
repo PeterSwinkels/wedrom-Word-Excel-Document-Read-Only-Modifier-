@@ -1,0 +1,11 @@
+WEDROM (Word Excel Document Read Only Modifier) - by: Peter Swinkels, ***2022***
+
+This program can circumvent the read only password protection for Microsoft Office (2007 and up) Word and Excel documents with the *.xlsx and *.docx file extensions.
+
+Warnings:
+-If the Office version used as the default for opening documents is not the same as the version used to create the documents this program is used on it is possible the documents will become corrupted.
+-This program deletes and overwrites the files it is used on. An error during operation can cause a loss of data.
+-For reasons of simplicity XML data is treated as plain text. While testing has not revealed any issues this should be taken into consideration by the user.
+
+Disclaimer:
+-This program is meant to demonstrate a weakness is Microsoft Office's read only password for documents created with it. It is not meant for tampering with data. Further more, it is the author's belief more advanced software should be used when serious protection of data integrity is required.
