@@ -21,6 +21,10 @@ Public Module CoreModule
    'This procedure is executed when this program is started.
    Public Sub Main()
       Try
+         Console.WriteLine(ProgramInformation())
+         Console.WriteLine()
+         Console.WriteLine(My.Application.Info.Description)
+
          With New OpenFileDialog With {.CheckFileExists = True, .FileName = Nothing, .Filter = "Microsoft Excel and Word files (*.docx;*.xlsx)|*.docx;*.xlsx", .FilterIndex = 1}
             If Not .ShowDialog() = DialogResult.Cancel Then
                Select Case Path.GetExtension(.FileName).ToLower()
@@ -113,4 +117,17 @@ Public Module CoreModule
          MessageBox.Show(ExceptionO.Message, My.Application.Info.Title, MessageBoxButtons.OK, MessageBoxIcon.Error)
       End Try
    End Sub
+
+   'This procedure returns this program's information.
+   Private Function ProgramInformation() As String
+      Try
+         With My.Application.Info
+            Return $"{ .AssemblyName} v{ .Version} - by: { .CompanyName}"
+         End With
+      Catch ExceptionO As Exception
+         MessageBox.Show(ExceptionO.Message, My.Application.Info.Title, MessageBoxButtons.OK, MessageBoxIcon.Error)
+      End Try
+
+      Return Nothing
+   End Function
 End Module
