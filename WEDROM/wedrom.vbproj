@@ -7,8 +7,8 @@
     <ProjectGuid>{1325A63D-6E14-4BF7-90B6-5A07BC67E929}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <StartupObject>Sub Main</StartupObject>
-    <RootNamespace>Password_Bypasser</RootNamespace>
-    <AssemblyName>Password Bypasser</AssemblyName>
+    <RootNamespace>WEDROMProgram</RootNamespace>
+    <AssemblyName>WEDROM</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
