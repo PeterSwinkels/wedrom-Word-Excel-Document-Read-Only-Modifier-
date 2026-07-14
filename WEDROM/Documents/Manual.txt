@@ -8,4 +8,4 @@ Warnings:
 -For reasons of simplicity XML data is treated as plain text. While testing has not revealed any issues this should be taken into consideration by the user.
 
 Disclaimer:
--This program is meant to demonstrate a weakness is Microsoft Office's read only password for documents created with it. It is not meant for tampering with data. Further more, it is the author's belief more advanced software should be used when serious protection of data integrity is required.
+-This program is meant to demonstrate a weakness is Microsoft Office's read-only password for documents created with it. It is not meant for tampering with data. Further more, it is the author's belief more advanced software should be used when serious protection of data integrity is required.
